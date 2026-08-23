@@ -10,6 +10,145 @@ TYPE_NAMES = {
     STRING: "String", DICTIONARY: "Dictionary", ARRAY: "Array",
 }
 
+# --------------------------------------------------------------------------
+# Sistema de Internacionalização (i18n)
+# --------------------------------------------------------------------------
+CURRENT_LANG = "pt"
+
+TRANSLATIONS = {
+    "pt": {
+        "window_title": "Save Editor - Godot (store_var)",
+        "no_file": "Nenhum arquivo aberto",
+        "btn_open": "📁 Abrir",
+        "btn_save": "💾 Salvar",
+        "btn_save_as": "Salvar como...",
+        "btn_unlock_all": "✨ Desbloquear tudo",
+        "btn_reset_all": "Zerar tudo",
+        "tooltip_unlock": "Marca todos os níveis, armas, corações, upgrades, E-Tanks e coletáveis como completos/desbloqueados, e enche a vida/E-Tanks.",
+        "tab_levels": "Níveis",
+        "tab_weapons": "Armas",
+        "tab_hearts": "Corações && E-Tanks",
+        "tab_upgrades": "Upgrades",
+        "tab_stats": "Estatísticas",
+        "tab_config": "Config.",
+        "tab_chips": "Chips",
+        "tab_other": "Outros campos",
+        "grp_levels": "Progresso dos níveis",
+        "grp_weapons": "Armas desbloqueadas",
+        "grp_hearts": "Coletáveis de vida e energia",
+        "grp_upgrades": "Upgrades de equipamento",
+        "grp_stats": "Estatísticas do jogador",
+        "grp_config": "Preferências",
+        "grp_chips": "Chips coletados",
+        "grp_other": "Campos não categorizados",
+        "msg_err_open": "Erro ao abrir",
+        "msg_loaded": "Carregado: {count} campos",
+        "msg_err_save": "Erro ao salvar",
+        "msg_saved": "Salvo em {path} ({size} bytes)",
+        "msg_unlock_done": "Tudo desbloqueado (lembre de Salvar)",
+        "msg_reset_done": "Tudo zerado (lembre de Salvar)",
+        "title_reset": "Zerar tudo",
+        "prompt_reset": "Isso vai desmarcar todos os níveis, armas, corações, E-Tanks, upgrades e chips. Continuar?",
+        "lbl_chips_count": "{count} coletáveis",
+        "btn_check_all": "✔ Marcar todos",
+        "btn_uncheck_all": "Desmarcar todos",
+        "format_unsupported": "<{vtype}> não editável aqui",
+        "pct_complete": "%p% completo",
+        "err_size": "Tamanho declarado não bate com o arquivo.",
+        "err_garbage": "Sobrou lixo no final do arquivo após o parse.",
+        "err_root": "A raiz do save não é um Dictionary."
+    },
+    "en": {
+        "window_title": "Save Editor - Godot (store_var)",
+        "no_file": "No file opened",
+        "btn_open": "📁 Open",
+        "btn_save": "💾 Save",
+        "btn_save_as": "Save as...",
+        "btn_unlock_all": "✨ Unlock All",
+        "btn_reset_all": "Reset All",
+        "tooltip_unlock": "Marks all levels, weapons, hearts, upgrades, E-Tanks, and collectibles as completed/unlocked, and fills health/E-Tanks.",
+        "tab_levels": "Levels",
+        "tab_weapons": "Weapons",
+        "tab_hearts": "Hearts && E-Tanks",
+        "tab_upgrades": "Upgrades",
+        "tab_stats": "Stats",
+        "tab_config": "Settings",
+        "tab_chips": "Chips",
+        "tab_other": "Other Fields",
+        "grp_levels": "Level Progress",
+        "grp_weapons": "Unlocked Weapons",
+        "grp_hearts": "Health and Energy Collectibles",
+        "grp_upgrades": "Equipment Upgrades",
+        "grp_stats": "Player Stats",
+        "grp_config": "Preferences",
+        "grp_chips": "Collected Chips",
+        "grp_other": "Uncategorized Fields",
+        "msg_err_open": "Error opening",
+        "msg_loaded": "Loaded: {count} fields",
+        "msg_err_save": "Error saving",
+        "msg_saved": "Saved to {path} ({size} bytes)",
+        "msg_unlock_done": "Everything unlocked (remember to Save)",
+        "msg_reset_done": "Everything reset (remember to Save)",
+        "title_reset": "Reset All",
+        "prompt_reset": "This will uncheck all levels, weapons, hearts, E-Tanks, upgrades, and chips. Continue?",
+        "lbl_chips_count": "{count} collectibles",
+        "btn_check_all": "✔ Check All",
+        "btn_uncheck_all": "Uncheck All",
+        "format_unsupported": "<{vtype}> not editable here",
+        "pct_complete": "%p% complete",
+        "err_size": "Declared size does not match file.",
+        "err_garbage": "Garbage data left at EOF after parsing.",
+        "err_root": "Save root is not a Dictionary."
+    },
+    "es": {
+        "window_title": "Editor de Partidas - Godot (store_var)",
+        "no_file": "Ningún archivo abierto",
+        "btn_open": "📁 Abrir",
+        "btn_save": "💾 Guardar",
+        "btn_save_as": "Guardar como...",
+        "btn_unlock_all": "✨ Desbloquear todo",
+        "btn_reset_all": "Reiniciar todo",
+        "tooltip_unlock": "Marca todos los niveles, armas, corazones, mejoras, E-Tanks y coleccionables como completados/desbloqueados, y llena la salud/E-Tanks.",
+        "tab_levels": "Niveles",
+        "tab_weapons": "Armas",
+        "tab_hearts": "Corazones && E-Tanks",
+        "tab_upgrades": "Mejoras",
+        "tab_stats": "Estadísticas",
+        "tab_config": "Ajustes",
+        "tab_chips": "Chips",
+        "tab_other": "Otros campos",
+        "grp_levels": "Progreso de niveles",
+        "grp_weapons": "Armas desbloqueadas",
+        "grp_hearts": "Coleccionables de vida y energía",
+        "grp_upgrades": "Mejoras de equipamiento",
+        "grp_stats": "Estadísticas del jugador",
+        "grp_config": "Preferencias",
+        "grp_chips": "Chips coleccionados",
+        "grp_other": "Campos no categorizados",
+        "msg_err_open": "Error al abrir",
+        "msg_loaded": "Cargado: {count} campos",
+        "msg_err_save": "Error al guardar",
+        "msg_saved": "Guardado en {path} ({size} bytes)",
+        "msg_unlock_done": "Todo desbloqueado (recuerda Guardar)",
+        "msg_reset_done": "Todo reiniciado (recuerda Guardar)",
+        "title_reset": "Reiniciar todo",
+        "prompt_reset": "Esto desmarcará todos los niveles, armas, corazones, E-Tanks, mejoras y chips. ¿Continuar?",
+        "lbl_chips_count": "{count} coleccionables",
+        "btn_check_all": "✔ Marcar todos",
+        "btn_uncheck_all": "Desmarcar todos",
+        "format_unsupported": "<{vtype}> no editable aquí",
+        "pct_complete": "%p% completado",
+        "err_size": "El tamaño declarado no coincide con el archivo.",
+        "err_garbage": "Datos residuales al final del archivo.",
+        "err_root": "La raíz del guardado no es un Dictionary."
+    }
+}
+
+def tr(key, **kwargs):
+    text = TRANSLATIONS.get(CURRENT_LANG, TRANSLATIONS["pt"]).get(key, key)
+    return text.format(**kwargs) if kwargs else text
+
+# --------------------------------------------------------------------------
 
 class Variant:
     """Um valor do Godot com seu tipo/flags originais preservados."""
@@ -122,23 +261,17 @@ def encode_variant(v):
 
 class SaveFile:
     """Save do Godot carregado em memoria, com acesso por chave ao dicionario raiz."""
-
     def __init__(self, path):
         self.path = path
         raw = open(path, "rb").read()
         declared = struct.unpack_from("<I", raw, 0)[0]
         if declared != len(raw) - 4:
-            raise ValueError(
-                f"Tamanho declarado ({declared}) nao bate com o arquivo "
-                f"({len(raw) - 4} bytes restantes). Arquivo pode estar truncado "
-                f"ou nao ser um save Godot store_var()."
-            )
+            raise ValueError(tr("err_size"))
         root, end = decode_variant(raw, 4)
         if end != len(raw):
-            raise ValueError("Sobrou lixo no final do arquivo apos o parse; "
-                              "formato inesperado.")
+            raise ValueError(tr("err_garbage"))
         if root.vtype != DICTIONARY:
-            raise ValueError("A raiz do save nao e um Dictionary.")
+            raise ValueError(tr("err_root"))
         self.root = root
         self._reindex()
 
@@ -183,10 +316,6 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont, QColor, QIcon
 
-
-# --------------------------------------------------------------------------
-# Tema visual
-# --------------------------------------------------------------------------
 
 ACCENT = "#4fc3f7"
 ACCENT_DARK = "#0288d1"
@@ -374,19 +503,16 @@ QToolTip {{
 """
 
 TAB_ICONS = {
-    "Niveis": "\U0001F5FA\uFE0F",
-    "Armas": "\U0001F52B",
-    "Coracoes && E-Tanks": "\u2764\uFE0F",
-    "Upgrades": "\u2B06\uFE0F",
-    "Estatisticas": "\U0001F4CA",
-    "Config.": "\u2699\uFE0F",
-    "Chips": "\U0001FA99",
-    "Outros campos": "\U0001F4C1",
+    "levels": "🗺️",
+    "weapons": "🔫",
+    "hearts": "❤️",
+    "upgrades": "⬆️",
+    "stats": "📊",
+    "config": "⚙️",
+    "chips": "🪙",
+    "other": "📁",
 }
 
-
-# Categorias conhecidas deste save (MMX fangame). Chaves fora dessas listas
-# ainda aparecem na aba "Outros campos", detectadas automaticamente pelo tipo.
 LEVEL_KEYS = [
     "intro_level_complete", "air_level_complete", "fire_level_complete",
     "train_level_complete", "water_level_complete", "snow_level_complete",
@@ -426,7 +552,6 @@ ALL_KNOWN = set(
     + UPGRADE_KEYS + STAT_KEYS + SETTING_KEYS + [ARRAY_KEY, "save_file_exists"]
 )
 
-
 def pretty_label(key):
     return key.replace("_", " ").strip().capitalize()
 
@@ -441,7 +566,6 @@ class BoolField(QCheckBox):
     def _on_change(self, _state):
         self.variant.value = self.isChecked()
 
-
 class IntField(QSpinBox):
     def __init__(self, variant):
         super().__init__()
@@ -452,7 +576,6 @@ class IntField(QSpinBox):
 
     def _on_change(self, val):
         self.variant.value = int(val)
-
 
 class FloatField(QDoubleSpinBox):
     def __init__(self, variant):
@@ -466,7 +589,6 @@ class FloatField(QDoubleSpinBox):
     def _on_change(self, val):
         self.variant.value = float(val)
 
-
 class StringField(QLineEdit):
     def __init__(self, variant):
         super().__init__()
@@ -477,7 +599,6 @@ class StringField(QLineEdit):
     def _on_change(self, text):
         self.variant.value = text
 
-
 def make_field_widget(variant):
     if variant.vtype == BOOL:
         return BoolField(variant)
@@ -487,7 +608,7 @@ def make_field_widget(variant):
         return FloatField(variant)
     if variant.vtype == STRING:
         return StringField(variant)
-    lbl = QLabel(f"<{TYPE_NAMES.get(variant.vtype, variant.vtype)}> nao editavel aqui")
+    lbl = QLabel(tr("format_unsupported", vtype=TYPE_NAMES.get(variant.vtype, variant.vtype)))
     lbl.setEnabled(False)
     return lbl
 
@@ -495,11 +616,10 @@ def make_field_widget(variant):
 class MainWindow(QMainWindow):
     def __init__(self, initial_path=None):
         super().__init__()
-        self.setWindowTitle("Save Editor - Godot (store_var)")
         self.resize(820, 680)
 
         self.save = None
-        self.bool_widgets = []          # p/ botoes "marcar tudo"
+        self.bool_widgets = []
         self.chip_checkboxes = []
 
         central = QWidget()
@@ -519,49 +639,53 @@ class MainWindow(QMainWindow):
         title_row = QHBoxLayout()
         title_box = QVBoxLayout()
         title_box.setSpacing(2)
-        title = QLabel("\U0001F3AE  Save Editor")
+        title = QLabel("🎮  Save Editor")
         title.setObjectName("title")
-        self.path_label = QLabel("Nenhum arquivo aberto")
+        self.path_label = QLabel(tr("no_file"))
         self.path_label.setObjectName("pathLabel")
         title_box.addWidget(title)
         title_box.addWidget(self.path_label)
         title_row.addLayout(title_box)
         title_row.addStretch()
+        
+        self.lang_combo = QComboBox()
+        self.lang_combo.addItems(["Português", "English", "Español"])
+        self.lang_combo.setFixedWidth(100)
+        self.lang_combo.currentIndexChanged.connect(self.change_language)
+        title_row.addWidget(self.lang_combo)
 
         self.progress = QProgressBar()
         self.progress.setFixedWidth(180)
         self.progress.setRange(0, 100)
         self.progress.setValue(0)
-        self.progress.setFormat("%p% completo")
         title_row.addWidget(self.progress)
         top_layout.addLayout(title_row)
 
         btn_row = QHBoxLayout()
         btn_row.setSpacing(8)
-        btn_open = QPushButton("\U0001F4C2  Abrir")
-        btn_open.clicked.connect(self.open_file)
-        btn_save = QPushButton("\U0001F4BE  Salvar")
-        btn_save.setObjectName("primary")
-        btn_save.clicked.connect(self.save_file)
-        btn_save_as = QPushButton("Salvar como...")
-        btn_save_as.clicked.connect(self.save_file_as)
-        btn_unlock_all = QPushButton("\u2728  Desbloquear tudo")
-        btn_unlock_all.setObjectName("primary")
-        btn_unlock_all.setToolTip(
-            "Marca todos os niveis, armas, coracoes, upgrades, E-Tanks e "
-            "coletaveis como completos/desbloqueados, e enche a vida/E-Tanks."
-        )
-        btn_unlock_all.clicked.connect(self.unlock_everything)
-        btn_reset_all = QPushButton("Zerar tudo")
-        btn_reset_all.setObjectName("danger")
-        btn_reset_all.clicked.connect(self.reset_everything)
+        
+        self.btn_open = QPushButton(tr("btn_open"))
+        self.btn_open.clicked.connect(self.open_file)
+        self.btn_save = QPushButton(tr("btn_save"))
+        self.btn_save.setObjectName("primary")
+        self.btn_save.clicked.connect(self.save_file)
+        self.btn_save_as = QPushButton(tr("btn_save_as"))
+        self.btn_save_as.clicked.connect(self.save_file_as)
+        
+        self.btn_unlock_all = QPushButton(tr("btn_unlock_all"))
+        self.btn_unlock_all.setObjectName("primary")
+        self.btn_unlock_all.clicked.connect(self.unlock_everything)
+        
+        self.btn_reset_all = QPushButton(tr("btn_reset_all"))
+        self.btn_reset_all.setObjectName("danger")
+        self.btn_reset_all.clicked.connect(self.reset_everything)
 
-        btn_row.addWidget(btn_open)
-        btn_row.addWidget(btn_save)
-        btn_row.addWidget(btn_save_as)
+        btn_row.addWidget(self.btn_open)
+        btn_row.addWidget(self.btn_save)
+        btn_row.addWidget(self.btn_save_as)
         btn_row.addStretch()
-        btn_row.addWidget(btn_reset_all)
-        btn_row.addWidget(btn_unlock_all)
+        btn_row.addWidget(self.btn_reset_all)
+        btn_row.addWidget(self.btn_unlock_all)
         top_layout.addLayout(btn_row)
 
         outer.addWidget(top_bar)
@@ -577,14 +701,37 @@ class MainWindow(QMainWindow):
         self.status = QStatusBar()
         self.setStatusBar(self.status)
 
+        self.retranslate_ui()
+
         if initial_path:
             self.load(initial_path)
+
+    def change_language(self, index):
+        global CURRENT_LANG
+        CURRENT_LANG = ["pt", "en", "es"][index]
+        self.retranslate_ui()
+
+    def retranslate_ui(self):
+        self.setWindowTitle(tr("window_title"))
+        if not self.save:
+            self.path_label.setText(tr("no_file"))
+        self.progress.setFormat(tr("pct_complete"))
+
+        self.btn_open.setText(tr("btn_open"))
+        self.btn_save.setText(tr("btn_save"))
+        self.btn_save_as.setText(tr("btn_save_as"))
+        self.btn_unlock_all.setText(tr("btn_unlock_all"))
+        self.btn_unlock_all.setToolTip(tr("tooltip_unlock"))
+        self.btn_reset_all.setText(tr("btn_reset_all"))
+
+        if self.save:
+            self.build_tabs()
 
     # --- carregamento / gravacao --------------------------------------------
 
     def open_file(self):
         path, _ = QFileDialog.getOpenFileName(
-            self, "Abrir save", "", "Save files (*.json *.sav *.dat);;Todos (*)"
+            self, "Abrir / Open / Abrir", "", "Save files (*.json *.sav *.dat);;All Files (*)"
         )
         if path:
             self.load(path)
@@ -593,10 +740,10 @@ class MainWindow(QMainWindow):
         try:
             self.save = SaveFile(path)
         except Exception as e:
-            QMessageBox.critical(self, "Erro ao abrir", str(e))
+            QMessageBox.critical(self, tr("msg_err_open"), str(e))
             return
         self.path_label.setText(path)
-        self.status.showMessage(f"Carregado: {len(self.save.keys())} campos", 5000)
+        self.status.showMessage(tr("msg_loaded", count=len(self.save.keys())), 5000)
         self.build_tabs()
         self.update_progress()
 
@@ -609,23 +756,22 @@ class MainWindow(QMainWindow):
         if not self.save:
             return
         path, _ = QFileDialog.getSaveFileName(
-            self, "Salvar como", self.save.path, "Save files (*.json);;Todos (*)"
+            self, tr("btn_save_as"), self.save.path, "Save files (*.json);;All Files (*)"
         )
         if path:
             self._write(path)
 
     def _write(self, path):
         try:
-            # valida que o proprio codec consegue re-ler o que vai escrever
             data = self.save.to_bytes()
             decode_variant(data, 4)
             with open(path, "wb") as f:
                 f.write(data)
             self.save.path = path
             self.path_label.setText(path)
-            self.status.showMessage(f"Salvo em {path} ({len(data)} bytes)", 5000)
+            self.status.showMessage(tr("msg_saved", path=path, size=len(data)), 5000)
         except Exception as e:
-            QMessageBox.critical(self, "Erro ao salvar", str(e))
+            QMessageBox.critical(self, tr("msg_err_save"), str(e))
 
     # --- construcao das abas -------------------------------------------------
 
@@ -634,49 +780,50 @@ class MainWindow(QMainWindow):
         self.bool_widgets = []
         self.chip_checkboxes = []
 
-        def add(widget, name):
-            icon = TAB_ICONS.get(name, "")
+        def add(widget, tab_id):
+            icon = TAB_ICONS.get(tab_id, "")
+            name = tr(f"tab_{tab_id}")
             self.tabs.addTab(widget, f"{icon}  {name}" if icon else name)
 
         add(self._build_group_tab(
-            [("save_file_exists", "Save existe")] +
+            [("save_file_exists", "Save file exists")] +
             [(k, pretty_label(k)) for k in LEVEL_KEYS],
-            "Progresso dos niveis"
-        ), "Niveis")
+            tr("grp_levels")
+        ), "levels")
 
         add(self._build_group_tab(
             [(k, pretty_label(k)) for k in WEAPON_KEYS],
-            "Armas desbloqueadas"
-        ), "Armas")
+            tr("grp_weapons")
+        ), "weapons")
 
         add(self._build_group_tab(
             [(k, pretty_label(k)) for k in HEART_KEYS] +
             [(k, pretty_label(k)) for k in ETANK_FLAG_KEYS] +
             [(k, pretty_label(k)) for k in ETANK_HEALTH_KEYS],
-            "Coletaveis de vida e energia"
-        ), "Coracoes && E-Tanks")
+            tr("grp_hearts")
+        ), "hearts")
 
         add(self._build_group_tab(
             [(k, pretty_label(k)) for k in UPGRADE_KEYS],
-            "Upgrades de equipamento"
-        ), "Upgrades")
+            tr("grp_upgrades")
+        ), "upgrades")
 
         add(self._build_group_tab(
             [(k, pretty_label(k)) for k in STAT_KEYS],
-            "Estatisticas do jogador"
-        ), "Estatisticas")
+            tr("grp_stats")
+        ), "stats")
 
         add(self._build_group_tab(
             [(k, pretty_label(k)) for k in SETTING_KEYS],
-            "Preferencias"
-        ), "Config.")
+            tr("grp_config")
+        ), "config")
 
         if self.save.has(ARRAY_KEY):
-            add(self._build_chips_tab(), "Chips")
+            add(self._build_chips_tab(), "chips")
 
         other_tab = self._build_other_tab()
         if other_tab is not None:
-            add(other_tab, "Outros campos")
+            add(other_tab, "other")
 
         self.update_progress()
 
@@ -720,17 +867,17 @@ class MainWindow(QMainWindow):
         vbox.setSpacing(12)
 
         top = QHBoxLayout()
-        info = QLabel(f"{len(self.save.get(ARRAY_KEY).value)} coletaveis")
+        info = QLabel(tr("lbl_chips_count", count=len(self.save.get(ARRAY_KEY).value)))
         info.setObjectName("subtitle")
-        btn_all = QPushButton("\u2714  Marcar todos")
-        btn_none = QPushButton("Desmarcar todos")
+        btn_all = QPushButton(tr("btn_check_all"))
+        btn_none = QPushButton(tr("btn_uncheck_all"))
         top.addWidget(info)
         top.addStretch()
         top.addWidget(btn_all)
         top.addWidget(btn_none)
         vbox.addLayout(top)
 
-        box = QGroupBox("Chips coletados")
+        box = QGroupBox(tr("grp_chips"))
         grid = QGridLayout(box)
         grid.setSpacing(6)
         grid.setContentsMargins(18, 20, 18, 16)
@@ -781,7 +928,7 @@ class MainWindow(QMainWindow):
         if not remaining:
             return None
         return self._build_group_tab(
-            [(k, pretty_label(k)) for k in remaining], "Campos nao categorizados"
+            [(k, pretty_label(k)) for k in remaining], tr("grp_other")
         )
 
     # --- acoes de conveniencia -----------------------------------------------
@@ -818,22 +965,19 @@ class MainWindow(QMainWindow):
                 item.value = True
 
         self.build_tabs()
-        self.status.showMessage("Tudo desbloqueado (lembre de Salvar)", 5000)
+        self.status.showMessage(tr("msg_unlock_done"), 5000)
 
     def reset_everything(self):
         if not self.save:
             return
         reply = QMessageBox.question(
-            self, "Zerar tudo",
-            "Isso vai desmarcar todos os niveis, armas, coracoes, E-Tanks, "
-            "upgrades e chips. Continuar?",
+            self, tr("title_reset"), tr("prompt_reset"),
             QMessageBox.Yes | QMessageBox.No, QMessageBox.No,
         )
         if reply != QMessageBox.Yes:
             return
 
-        for key in (LEVEL_KEYS + WEAPON_KEYS + HEART_KEYS + ETANK_FLAG_KEYS
-                    + UPGRADE_KEYS):
+        for key in (LEVEL_KEYS + WEAPON_KEYS + HEART_KEYS + ETANK_FLAG_KEYS + UPGRADE_KEYS):
             v = self.save.get(key)
             if v is not None:
                 v.value = False
@@ -853,7 +997,7 @@ class MainWindow(QMainWindow):
                 item.value = False
 
         self.build_tabs()
-        self.status.showMessage("Tudo zerado (lembre de Salvar)", 5000)
+        self.status.showMessage(tr("msg_reset_done"), 5000)
 
     # --- progresso -------------------------------------------------------
 
