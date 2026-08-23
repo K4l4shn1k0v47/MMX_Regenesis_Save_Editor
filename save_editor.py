@@ -3,10 +3,6 @@ import struct
 import sys
 import copy
 
-# --------------------------------------------------------------------------
-# Codec binario (Godot Variant)
-# --------------------------------------------------------------------------
-
 NIL, BOOL, INT, FLOAT, STRING, DICTIONARY, ARRAY = 0, 1, 2, 3, 4, 27, 28
 
 TYPE_NAMES = {
