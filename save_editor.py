@@ -1,26 +1,4 @@
 #!/usr/bin/env python3
-"""
-Editor de Save (formato binario Godot Variant / FileAccess.store_var)
-=======================================================================
-
-Le e escreve arquivos de save salvos pelo Godot com FileAccess.store_var(),
-como o MMXSaveSlotN.json deste jogo. O arquivo NAO e criptografado nem
-JSON de verdade: e um Dictionary do GDScript serializado em binario.
-
-Formato (por byte, little-endian):
-    [u32 tamanho_do_blob]
-    [blob]:
-        [u32 header]  -> 16 bits baixos = tipo, 16 bits altos = flags
-        ... dados especificos do tipo ...
-
-Tipos usados neste save: NIL(0), BOOL(1), INT(2), FLOAT(3), STRING(4),
-DICTIONARY(27), ARRAY(28). O codec abaixo e generico o suficiente para
-qualquer save do Godot feito com store_var() usando esses tipos.
-
-Requisitos: PyQt5  ->  pip install PyQt5
-Uso: python3 godot_save_editor.py [arquivo_de_save]
-"""
-
 import struct
 import sys
 import copy
